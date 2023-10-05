@@ -22,52 +22,11 @@ const { title } = Astro.props;
 </html>
 
 <style is:global>
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-a {
-  text-decoration: none;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-ul, ol {
-  list-style: none;
-}
-
-input, button, textarea {
-  border: 1px solid #ccc;
-  padding: 5px;
-  font-size: 1em;
-}
+@import url("../reset.css");
 
 body {
   font-family: sans-serif;
   background-color: #fff;
-  color: #000;
-}
-
-h1 {
-  font-size: 2em;
-  font-weight: bold;
-  color: #000;
-}
-
-h2 {
-  font-size: 1.5em;
-  font-weight: bold;
-  color: #000;
-}
-
-h3 {
-  font-size: 1.2em;
-  font-weight: bold;
   color: #000;
 }
 
@@ -98,5 +57,4 @@ a:hover {
 .purple {
   color: #9933FF;
 }
-
 </style>
