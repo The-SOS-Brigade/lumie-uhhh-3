@@ -14,5 +14,5 @@ npm install
 ```sh
 npm run dev
 # open http://localhost:4321/
-# add pages (links) in `src/pages/`
+# add pages, `.md` or `.astro`, in `src/pages/`
 ```
