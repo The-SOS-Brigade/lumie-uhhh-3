@@ -13,11 +13,23 @@ const { title } = Astro.props;
 		<meta name="viewport" content="width=device-width" />
 		<meta name="description" content="RBXLIFE is a safe and secure platform for everyone to earn Robux." />
 		<link rel="icon" type="image/png" href="/pruple-r.svg.png" />
-		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 	</head>
 	<body>
-		<slot />
+    <header>
+      <h1>RBXLIFE</h1>
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+      </nav>
+    </header>
+    <main>
+      <slot />
+    </main>
+    <footer>
+      <p>Copyright &copy;  2023 | RBXLIFE</p>
+    </footer>
 	</body>
 </html>
 
@@ -30,31 +42,55 @@ body {
   color: #000;
 }
 
-p {
-  font-size: 1em;
-  line-height: 1.5em;
-  color: #000;
-}
-
 a {
   color: #333;
   text-decoration: none;
 }
 
 a:hover {
-  color: #000;
   text-decoration: underline;
 }
 
-.black {
-  color: #000;
-}
-
-.white {
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 50px;
+  background-color: #333;
   color: #fff;
 }
 
-.purple {
-  color: #9933FF;
+nav {
+  float: right;
 }
+
+nav a {
+  display: inline-block;
+  margin: 4px;
+  padding: 10px;
+
+  color: #fff;
+}
+
+nav a:hover {
+  background-color: #9933FF;
+  border-radius: 2px;
+}
+
+main {
+  margin-top: 50px;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 50px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+}
+
 </style>
