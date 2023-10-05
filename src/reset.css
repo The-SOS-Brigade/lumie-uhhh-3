@@ -8,6 +8,10 @@ a {
   text-decoration: none;
 }
 
+h1 {
+  display: inline;
+}
+
 img {
   max-width: 100%;
   height: auto;
